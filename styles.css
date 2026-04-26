@@ -115,6 +115,27 @@ body:hover .cursor-follower {
    transition: all 0.4s var(--ease-out);
 }
 
+/* Nav background always visible */
+.nav::before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   background: rgba(10, 15, 26, 0.85);
+   backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+   border-bottom: 1px solid var(--dark-border);
+   z-index: -1;
+}
+
+.nav.scrolled {
+   background: transparent;
+   padding: var(--space-md) 0;
+}
+
+.nav.scrolled::before {
+   background: rgba(10, 15, 26, 0.95);
+}
+
 .nav.scrolled {
    background: rgba(17, 24, 39, 0.92);
    backdrop-filter: blur(20px);
@@ -362,10 +383,10 @@ body:hover .cursor-follower {
    min-height: 100vh;
    background: var(--dark);
    position: relative;
-   overflow: hidden;
+   overflow: visible;
    display: flex;
    align-items: center;
-   padding: var(--space-5xl) 0 var(--space-4xl);
+   padding: calc(140px + var(--space-4xl)) 0 var(--space-5xl);
 }
 
 /* Grid background */
@@ -464,6 +485,11 @@ body:hover .cursor-follower {
    z-index: 2;
 }
 
+/* Add breathing room at bottom for scroll indicator */
+.hero-inner {
+   padding-bottom: 80px;
+}
+
 /* Hero content */
 .hero-content {
    max-width: 600px;
@@ -533,7 +559,7 @@ body:hover .cursor-follower {
 .hero-subtitle {
    font-size: 1.125rem;
    line-height: 1.7;
-   color: rgba(255,255,255,0.55);
+   color: rgba(255,255,255,0.70);
    margin-bottom: var(--space-2xl);
    max-width: 520px;
 }
@@ -598,9 +624,9 @@ body:hover .cursor-follower {
 
 .hex-network svg {
    width: 100%;
-   max-width: 500px;
+   max-width: 600px;
    height: auto;
-   filter: drop-shadow(0 0 60px rgba(77,150,255,0.15));
+   filter: drop-shadow(0 0 80px rgba(77,150,255,0.2));
 }
 
 .hex-pulse {
@@ -637,6 +663,12 @@ body:hover .cursor-follower {
    letter-spacing: 0.1em;
    text-transform: uppercase;
    animation: scrollBounce 2s ease-in-out infinite;
+   z-index: 10;
+}
+
+/* Ensure hero has room at bottom for scroll indicator */
+.hero-inner {
+   padding-bottom: 60px;
 }
 
 .scroll-line {
