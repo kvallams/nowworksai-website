@@ -386,7 +386,7 @@ body:hover .cursor-follower {
    overflow: visible;
    display: flex;
    align-items: center;
-   padding: calc(140px + var(--space-4xl)) 0 var(--space-5xl);
+   padding: 160px 0 var(--space-5xl);
 }
 
 /* Grid background */
@@ -476,23 +476,18 @@ body:hover .cursor-follower {
 .hero-inner {
    max-width: 1280px;
    margin: 0 auto;
-   padding: 0 var(--space-xl);
+   padding: 0 var(--space-xl) 80px;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: var(--space-4xl);
+   gap: var(--space-5xl);
    align-items: center;
    position: relative;
    z-index: 2;
 }
 
-/* Add breathing room at bottom for scroll indicator */
-.hero-inner {
-   padding-bottom: 80px;
-}
-
 /* Hero content */
 .hero-content {
-   max-width: 600px;
+   max-width: 560px;
 }
 
 .hero-badge {
@@ -624,7 +619,7 @@ body:hover .cursor-follower {
 
 .hex-network svg {
    width: 100%;
-   max-width: 600px;
+   max-width: 700px;
    height: auto;
    filter: drop-shadow(0 0 80px rgba(77,150,255,0.2));
 }
