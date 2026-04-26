@@ -381,12 +381,12 @@ body:hover .cursor-follower {
 /* --- Hero Section --- */
 .hero {
    min-height: 100vh;
-   background: var(--dark);
+   background: #0A0F1A !important;
    position: relative;
    overflow: visible;
    display: flex;
    align-items: center;
-   padding: 160px 0 var(--space-5xl);
+   padding: 160px 0 80px;
 }
 
 /* Grid background */
@@ -554,7 +554,7 @@ body:hover .cursor-follower {
 .hero-subtitle {
    font-size: 1.125rem;
    line-height: 1.7;
-   color: rgba(255,255,255,0.55);
+   color: rgba(255,255,255,0.7);
    margin-bottom: var(--space-2xl);
    max-width: 520px;
 }
