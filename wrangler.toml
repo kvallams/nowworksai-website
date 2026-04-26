@@ -1,4 +1,0 @@
-[pages]
-project_name = "nowworksai-site"
-production_branch = "main"
-pages_build_output_dir = "./"
