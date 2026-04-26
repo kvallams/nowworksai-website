@@ -487,7 +487,7 @@ body:hover .cursor-follower {
 
 /* Hero content */
 .hero-content {
-   max-width: 560px;
+   max-width: 600px;
 }
 
 .hero-badge {
@@ -554,7 +554,7 @@ body:hover .cursor-follower {
 .hero-subtitle {
    font-size: 1.125rem;
    line-height: 1.7;
-   color: rgba(255,255,255,0.70);
+   color: rgba(255,255,255,0.75);
    margin-bottom: var(--space-2xl);
    max-width: 520px;
 }
