@@ -386,7 +386,7 @@ body:hover .cursor-follower {
    overflow: visible;
    display: flex;
    align-items: center;
-   padding: 160px 0 80px;
+   padding: 200px 0 120px;
 }
 
 /* Grid background */
@@ -476,7 +476,7 @@ body:hover .cursor-follower {
 .hero-inner {
    max-width: 1280px;
    margin: 0 auto;
-   padding: 0 var(--space-xl) 80px;
+   padding: 0 var(--space-xl) 120px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: var(--space-5xl);
@@ -494,14 +494,14 @@ body:hover .cursor-follower {
    display: inline-flex;
    align-items: center;
    gap: var(--space-sm);
-   padding: 8px 20px;
+   padding: 10px 22px;
    background: rgba(255,255,255,0.05);
    border: 1px solid rgba(255,255,255,0.1);
    border-radius: 100px;
    font-size: 0.8125rem;
    font-weight: 500;
    color: rgba(255,255,255,0.8);
-   margin-bottom: var(--space-xl);
+   margin-bottom: var(--space-2xl);
    letter-spacing: 0.02em;
 }
 
@@ -522,9 +522,9 @@ body:hover .cursor-follower {
    font-family: var(--font-display);
    font-size: clamp(2.75rem, 5.5vw, 4.5rem);
    font-weight: 800;
-   line-height: 1.05;
+   line-height: 1.15;
    color: #fff;
-   margin-bottom: var(--space-2xl);
+   margin-bottom: var(--space-3xl);
    letter-spacing: -0.03em;
 }
 
@@ -555,14 +555,14 @@ body:hover .cursor-follower {
    font-size: 1.125rem;
    line-height: 1.7;
    color: rgba(255,255,255,0.7);
-   margin-bottom: var(--space-2xl);
+   margin-bottom: var(--space-3xl);
    max-width: 520px;
 }
 
 .hero-actions {
    display: flex;
-   gap: var(--space-md);
-   margin-bottom: var(--space-3xl);
+   gap: var(--space-xl);
+   margin-bottom: var(--space-4xl);
    flex-wrap: wrap;
 }
 
@@ -703,7 +703,7 @@ body:hover .cursor-follower {
 /* --- Section shared --- */
 .section-header {
    text-align: center;
-   margin-bottom: var(--space-4xl);
+   margin-bottom: var(--space-5xl);
 }
 
 .section-tag {
@@ -733,9 +733,9 @@ body:hover .cursor-follower {
    font-size: clamp(2rem, 4vw, 3rem);
    font-weight: 800;
    color: var(--ink);
-   line-height: 1.15;
+   line-height: 1.2;
    letter-spacing: -0.02em;
-   margin-bottom: var(--space-md);
+   margin-bottom: var(--space-xl);
 }
 
 .section-title-light {
@@ -767,7 +767,7 @@ body:hover .cursor-follower {
 
 /* --- Services Section --- */
 .services {
-   padding: var(--space-5xl) 0;
+   padding: calc(var(--space-5xl) + 2rem) 0;
    background: var(--paper);
    position: relative;
 }
@@ -792,7 +792,7 @@ body:hover .cursor-follower {
    background: #fff;
    border: 1px solid rgba(0,0,0,0.06);
    border-radius: var(--radius-lg);
-   padding: var(--space-2xl);
+   padding: calc(var(--space-2xl) + 1rem);
    transition: all 0.4s var(--ease-out);
    position: relative;
    overflow: hidden;
@@ -835,7 +835,7 @@ body:hover .cursor-follower {
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: var(--space-lg);
+   margin-bottom: var(--space-xl);
    transition: transform 0.3s var(--ease-spring);
 }
 
@@ -853,7 +853,7 @@ body:hover .cursor-follower {
    font-size: 1.25rem;
    font-weight: 700;
    color: var(--ink);
-   margin-bottom: var(--space-sm);
+   margin-bottom: var(--space-md);
    letter-spacing: -0.01em;
 }
 
@@ -861,7 +861,7 @@ body:hover .cursor-follower {
    font-size: 0.9375rem;
    color: var(--slate);
    line-height: 1.65;
-   margin-bottom: var(--space-lg);
+   margin-bottom: var(--space-xl);
 }
 
 .service-list {
@@ -890,7 +890,7 @@ body:hover .cursor-follower {
 
 /* --- Approach Section --- */
 .approach {
-   padding: var(--space-5xl) 0;
+   padding: calc(var(--space-5xl) + 2rem) 0;
    background: var(--dark);
    position: relative;
    overflow: hidden;
@@ -918,16 +918,16 @@ body:hover .cursor-follower {
 }
 
 .process-steps {
-   margin-top: var(--space-3xl);
+   margin-top: var(--space-4xl);
    display: flex;
    flex-direction: column;
-   gap: var(--space-lg);
+   gap: var(--space-xl);
 }
 
 .process-step {
    display: flex;
-   gap: var(--space-lg);
-   padding: var(--space-lg);
+   gap: var(--space-xl);
+   padding: var(--space-xl);
    border-radius: var(--radius);
    transition: all 0.3s var(--ease-out);
    cursor: default;
@@ -961,7 +961,7 @@ body:hover .cursor-follower {
    font-size: 1.125rem;
    font-weight: 700;
    color: #fff;
-   margin-bottom: 4px;
+   margin-bottom: var(--space-sm);
 }
 
 .step-content p {
@@ -992,7 +992,7 @@ body:hover .cursor-follower {
 
 /* --- Why Section --- */
 .why {
-   padding: var(--space-5xl) 0;
+   padding: calc(var(--space-5xl) + 2rem) 0;
    background: var(--paper);
    position: relative;
 }
@@ -1008,7 +1008,7 @@ body:hover .cursor-follower {
    background: #fff;
    border: 1px solid rgba(0,0,0,0.06);
    border-radius: var(--radius-lg);
-   padding: var(--space-2xl);
+   padding: calc(var(--space-2xl) + 1rem);
    position: relative;
    overflow: hidden;
    transition: all 0.4s var(--ease-out);
@@ -1035,7 +1035,7 @@ body:hover .cursor-follower {
    -webkit-text-fill-color: transparent;
    background-clip: text;
    line-height: 1;
-   margin-bottom: var(--space-md);
+   margin-bottom: var(--space-xl);
 }
 
 .why-card h3 {
@@ -1043,13 +1043,14 @@ body:hover .cursor-follower {
    font-size: 1.25rem;
    font-weight: 700;
    color: var(--ink);
-   margin-bottom: var(--space-sm);
+   margin-bottom: var(--space-md);
 }
 
 .why-card p {
    font-size: 0.9375rem;
    color: var(--slate);
    line-height: 1.65;
+   margin-bottom: var(--space-lg);
 }
 
 /* --- Marquee Section --- */
@@ -1097,7 +1098,7 @@ body:hover .cursor-follower {
 
 /* --- CTA / Contact Section --- */
 .cta-section {
-   padding: var(--space-5xl) 0;
+   padding: calc(var(--space-5xl) + 2rem) 0;
    background: var(--dark);
    position: relative;
    overflow: hidden;
@@ -1122,7 +1123,7 @@ body:hover .cursor-follower {
    background: rgba(255,255,255,0.03);
    border: 1px solid rgba(255,255,255,0.08);
    border-radius: var(--radius-lg);
-   padding: var(--space-4xl);
+   padding: calc(var(--space-4xl) + 2rem);
    max-width: 780px;
    margin: 0 auto;
    backdrop-filter: blur(12px);
@@ -1137,8 +1138,8 @@ body:hover .cursor-follower {
    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
    font-weight: 800;
    color: #fff;
-   line-height: 1.2;
-   margin-bottom: var(--space-md);
+   line-height: 1.3;
+   margin-bottom: var(--space-xl);
    letter-spacing: -0.02em;
 }
 
@@ -1153,19 +1154,19 @@ body:hover .cursor-follower {
    text-align: left;
    display: flex;
    flex-direction: column;
-   gap: var(--space-lg);
+   gap: var(--space-xl);
 }
 
 .form-row {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: var(--space-lg);
+   gap: var(--space-xl);
 }
 
 .form-group {
    display: flex;
    flex-direction: column;
-   gap: 6px;
+   gap: 8px;
 }
 
 .form-group--full {
@@ -1232,7 +1233,7 @@ body:hover .cursor-follower {
 
 /* --- Footer --- */
 .footer {
-   padding: var(--space-3xl) 0 var(--space-xl);
+   padding: calc(var(--space-3xl) + 2rem) 0 var(--space-2xl);
    background: var(--dark);
    border-top: 1px solid var(--dark-border);
 }
