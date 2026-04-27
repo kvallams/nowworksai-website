@@ -3,7 +3,7 @@
   "main": "src/index.js",
   "compatibility_date": "2026-04-27",
   "assets": {
-    "directories": ["."]
+    "directory": "."
   },
   "observability": {
     "enabled": true
