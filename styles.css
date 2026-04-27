@@ -757,6 +757,14 @@ body:hover .cursor-follower {
    line-height: 1.7;
 }
 
+.section-desc {
+   font-size: 1.125rem;
+   color: var(--slate);
+   max-width: 600px;
+   margin: 0 auto;
+   line-height: 1.7;
+}
+
 /* --- Services Section --- */
 .services {
    padding: var(--space-5xl) 0;
@@ -1022,7 +1030,7 @@ body:hover .cursor-follower {
    font-family: var(--font-display);
    font-size: 3rem;
    font-weight: 800;
-   background: linear-gradient(135deg, rgba(255,77,136,0.15), rgba(77,150,255,0.15));
+   background: linear-gradient(135deg, var(--grad-1), var(--grad-5));
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    background-clip: text;
